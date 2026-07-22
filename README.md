@@ -4,26 +4,29 @@
 
 ## Overview
 
-Flood-related disasters continue to affect communities across Nigeria through fatalities, population displacement and economic losses. Timely analysis of flood incidents can help emergency agencies identify high-risk locations, understand changing trends and allocate resources more effectively.
+Flood-related disasters continue to affect communities across Nigeria through fatalities, population displacement and economic losses. Understanding where flood impacts are most severe can support better disaster preparedness, resource allocation and risk mitigation.
 
-This project analyses flood incidents recorded between **2018 and 2025** across **15 Nigerian states**. SQL was used for database setup, data cleaning and exploratory analysis before developing an interactive Power BI dashboard to monitor flood trends, assess regional risk and explore factors associated with severe flood events.
-
-## Project Links
-
-- [Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNTc2YWEzZWYtYmFhZS00OTcwLThmNDEtZjlkMjQwNTQ2ODgxIiwidCI6ImI5YmM1OTJjLWQ0MDMtNDJhMi1hNDIxLWY0ZmNkN2Q5MjljYyJ9)
+This project analyses flood incidents recorded between **2018 and 2025** across **15 Nigerian states** using SQL and Power BI. The analysis identifies flood trends, regional risk patterns and factors associated with severe flood events through an interactive dashboard.
 
 ---
 
-## Business Problem
+## Live Dashboard
 
-Emergency management teams require timely insights to answer questions such as:
+[Interactive Dashboard](  
+https://app.powerbi.com/view?r=eyJrIjoiNTc2YWEzZWYtYmFhZS00OTcwLThmNDEtZjlkMjQwNTQ2ODgxIiwidCI6ImI5YmM1OTJjLWQ0MDMtNDJhMi1hNDIxLWY0ZmNkN2Q5MjljYyJ9)
 
-- Which states experience the greatest flood impact?
-- Which regions account for the highest economic losses?
-- How have flood incidents changed over time?
-- Which year recorded the highest fatalities?
+---
+
+## Business Questions
+
+This project answers the following questions:
+
+- Which states recorded the highest flood impact?
+- Which regions experienced the greatest economic losses?
+- How have flood incidents changed between 2018 and 2025?
+- Which year recorded the highest flood fatalities?
 - Which environmental factors are associated with severe flooding?
-- Does emergency response time appear related to higher fatalities?
+- Does emergency response time appear related to higher fatality levels?
 - Which locations should be prioritised for flood mitigation?
 
 ---
@@ -34,25 +37,25 @@ Emergency management teams require timely insights to answer questions such as:
 
 The dataset was prepared in SQL by:
 
+- Creating the database and table structure
 - Assessing data quality
 - Handling missing values
 - Removing duplicate records
-- Validating data types
+- Validating data consistency
 
 ### Exploratory Analysis
 
 SQL queries were developed to analyse:
 
-- Annual flood activity
-- State-level flood impact
-- Regional economic losses
-- Climate risk trends
-- Flood severity distribution
+- Flood impact by state and region
+- Annual flood trends
+- Climate risk patterns
+- Flood severity drivers
 - Emergency response performance
 
 ### Data Transformation
 
-The prepared dataset was imported into Power BI, where Power Query was used to perform additional transformations before building the data model.
+The prepared dataset was imported into Power BI, where Power Query was used to perform additional transformations before building the analytical model.
 
 ### Business Analytics
 
@@ -74,54 +77,53 @@ DAX measures were created to calculate:
 
 ### Executive Overview
 
-![Executive Overview](Images/executive_overview.png)
+![Executive Overview](executive_overview.png)
 
-Provides an executive summary of flood activity across Nigeria through KPIs, regional comparisons and geographic analysis.
+Provides a national summary of flood activity through KPI cards, state comparisons, regional analysis and an interactive flood risk map.
 
 ---
 
 ### Trend Analysis
 
-![Trend Analysis](Images/trend_analysis.png)
+![Trend Analysis](trend_analysis.png)
 
-Examines changes in flood activity between 2018 and 2025, highlighting trends in fatalities, economic loss, climate risk and flood severity.
+Examines flood trends between 2018 and 2025, highlighting changes in fatalities, economic losses, climate risk and flood severity.
 
 ---
 
 ### Severity Drivers & Emergency Response
 
-[Severity Drivers & Emergency Response](Images/severity_drivers.png)
+![Severity Drivers & Emergency Response](severity_drivers.png)
 
-Explores factors associated with severe flood events, including emergency response time, rainfall patterns and environmental conditions.
+Explores the relationship between flood severity, rainfall, waste blockage and emergency response performance.
 
 ---
 
 ## Key Findings
 
-- Flood fatalities were concentrated in a small number of states, indicating priority areas for intervention.
-- Economic losses varied considerably across regions, suggesting uneven flood exposure.
-- Moderate and high-severity floods accounted for most recorded incidents.
-- Regions with longer emergency response times generally recorded higher fatality levels.
-- Poor drainage conditions and waste blockage appeared alongside areas experiencing greater flood severity.
-- Climate risk remained consistently higher across several regions throughout the analysis period.
+- **Anambra** recorded the highest flood fatalities (**6.3K**), followed by **Abuja (6.2K)** and **Borno (6.0K)**.
+- **2019** recorded the highest average annual fatalities (**10.54K**), with fatality levels remaining consistently high throughout the study period.
+- The **South South** region recorded both the highest economic loss (**₦906.9K**) and the highest climate risk score (**384**).
+- **Moderate** and **High** severity floods accounted for over **77%** of recorded flood events.
+- The average emergency response time was **12.71 hours**, while **38.19%** of recorded flood events were classified as high severity.
 
 ---
 
 ## Recommendations
 
 - Prioritise flood mitigation initiatives in states with consistently high fatalities.
-- Improve emergency response capacity in regions with longer response times.
-- Increase investment in drainage maintenance within flood-prone communities.
-- Expand early warning systems in areas with persistent climate risk.
-- Use regional risk indicators to support disaster management planning and resource allocation.
+- Strengthen emergency response capacity across high-risk regions.
+- Improve drainage infrastructure and waste management in flood-prone communities.
+- Expand early warning systems to support disaster preparedness.
+- Use regional risk indicators to guide resource allocation and mitigation planning.
 
 ---
 
 ## Project Limitations
 
-- The analysis covers 15 Nigerian states rather than all 36 states and the FCT.
-- Findings depend on the completeness and quality of the available dataset.
-- Economic loss values reflect the reported values contained in the dataset.
+- The analysis covers **15 Nigerian states** and does not represent all states in Nigeria.
+- Findings depend on the completeness of the available dataset.
+- The dataset was created for learning purposes and should not be interpreted as official government statistics.
 
 ---
 
@@ -131,7 +133,7 @@ Explores factors associated with severe flood events, including emergency respon
 - **Power BI:** Data visualisation
 - **Power Query:** Data transformation
 - **DAX:** Business calculations
-- **Microsoft Excel:** Data analysis
+- **Microsoft Excel:** Data validation
 
 ---
 
@@ -146,16 +148,16 @@ Nigeria-Flood-Risk-Intelligence/
 ├── Data/
 │   └── raw_flood_data.csv
 │
-├── SQL/
-│   ├── 01_database_setup.sql
-│   ├── 02_data_cleaning.sql
-│   └── 03_exploratory_analysis.sql
-│
 ├── Images/
 │   ├── dashboard_preview.png
 │   ├── executive_overview.png
 │   ├── trend_analysis.png
 │   └── severity_drivers.png
+│
+├── SQL/
+│   ├── 01_database_setup.sql
+│   ├── 02_data_cleaning.sql
+│   └── 03_exploratory_analysis.sql
 │
 ├── README.md
 └── LICENSE
@@ -165,6 +167,4 @@ Nigeria-Flood-Risk-Intelligence/
 
 ## Collaboration
 
-This project was completed by **Team DTV**.
-
-As the project lead, I coordinated the analytical workflow and contributed to the SQL analysis, dashboard development and business insight generation while collaborating with the team throughout the project.
+This project was completed by **Team DTV**. Team members contributed throughout the project lifecycle, from planning and analysis to dashboard development and presentation. My primary contributions included SQL analysis, Power BI dashboard development and communicating the analytical findings.
