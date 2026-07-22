@@ -127,13 +127,11 @@ Explores the relationship between flood severity, rainfall, waste blockage and e
 
 ---
 
-## Tools
+## Tools Used
 
-- **SQL:** Database management and querying
-- **Power BI:** Data visualisation
-- **Power Query:** Data transformation
-- **DAX:** Business calculations
-- **Microsoft Excel:** Data validation
+- **SQL:** Database creation, data preparation and exploratory analysis.
+- **Power BI:** Data transformation (Power Query), data modelling, DAX calculations and dashboard development.
+- **Microsoft Excel:** Preliminary data validation.
 
 ---
 
