@@ -1,6 +1,6 @@
-# Nigeria Flood Risk Intelligence: SQL & Power BI Analysis (2018–2025)
+# Nigeria Flood Risk Analysis: SQL & Power BI Analysis (2018–2025)
 
-![Dashboard Preview](Images/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 ## Overview
 
@@ -77,7 +77,7 @@ DAX measures were created to calculate:
 
 ### Executive Overview
 
-![Executive Overview](executive_overview.png)
+![Executive Overview](executive_overview.png.png)
 
 Provides a national summary of flood activity through KPI cards, state comparisons, regional analysis and an interactive flood risk map.
 
@@ -85,7 +85,7 @@ Provides a national summary of flood activity through KPI cards, state compariso
 
 ### Trend Analysis
 
-![Trend Analysis](trend_analysis.png)
+![Trend Analysis](trend_analysis.png.png)
 
 Examines flood trends between 2018 and 2025, highlighting changes in fatalities, economic losses, climate risk and flood severity.
 
@@ -93,7 +93,7 @@ Examines flood trends between 2018 and 2025, highlighting changes in fatalities,
 
 ### Severity Drivers & Emergency Response
 
-![Severity Drivers & Emergency Response](severity_drivers.png)
+![Severity Drivers & Emergency Response](severity_drivers.png.png)
 
 Explores the relationship between flood severity, rainfall, waste blockage and emergency response performance.
 
