@@ -165,4 +165,4 @@ Nigeria-Flood-Risk-Intelligence/
 
 ## Collaboration
 
-This project was completed by **Team DTV**. Team members contributed throughout the project lifecycle, from planning and analysis to dashboard development and presentation. My primary contributions included SQL analysis, Power BI dashboard development and communicating the analytical findings.
+This project was completed by **Team DTV**. Oluwadamilola Shafe, Victory Oladimeji and Anuoluwapo David collaborated on the analytical workflow including database design, data preparation, exploratory analysis, dashboard development and business insight generation. 
